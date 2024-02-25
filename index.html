@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hangman JS</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1 class="text-logo">Forca JS</h1>
+      <button class="newgame-button">New game</button>
+      <div class="alert" id="select-theme">
+        <h2>Select a theme:</h2>
+        <nav>
+          <div>
+            <p>Português</p>
+            <ul>
+              <li><a href="#" class="theme" data-theme="listaFrutas">Frutas</a></li>
+              <li><a href="#" class="theme" data-theme="listaAnimais">Animais</a></li>
+              <li><a href="#" class="theme" data-theme="listaCores">Cores</a></li>
+              <li><a href="#" class="theme" data-theme="listaEsportes">Esportes</a></li>
+            </ul>
+          </div>
+          <div>
+            <p>English</p>
+            <ul>
+              <li><a href="#" class="theme" data-theme="listFruits">Fruits</a></li>
+              <li><a href="#" class="theme" data-theme="listAnimals">Animals</a></li>
+              <li><a href="#" class="theme" data-theme="listColors">Colors</a></li>
+              <li><a href="#" class="theme" data-theme="listSports">Sports</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+  
+    <main>
+      <div class="game-container">
+        <div class="hangman">
+          <img src="./assets/forca-0.png" alt="imagem do desenho de uma forca">
+        </div>
+        <div class="word-container">
+          <!-- <h4 class="theme">Frutas</h4>
+          <div class="word">
+            <span class="letter">B</span>
+            <span class="letter">A</span>
+            <span class="letter"></span>
+            <span class="letter">A</span>
+            <span class="letter"></span>
+            <span class="letter">A</span>
+          </div> -->
+        </div>
+      </div>
+      <p class="alert" id="alert-game"></p>
+      <div id="keyboard">
+        <button class="letter-button">A</button>
+        <button class="letter-button">B</button>
+        <button class="letter-button">C</button>
+        <button class="letter-button">D</button>
+        <button class="letter-button">E</button>
+        <button class="letter-button">F</button>
+        <button class="letter-button">G</button>
+        <button class="letter-button">H</button>
+        <button class="letter-button">I</button>
+        <button class="letter-button">J</button>
+        <button class="letter-button">K</button>
+        <button class="letter-button">L</button>
+        <button class="letter-button">M</button>
+        <button class="letter-button">N</button>
+        <button class="letter-button">O</button>
+        <button class="letter-button">P</button>
+        <button class="letter-button">Q</button>
+        <button class="letter-button">R</button>
+        <button class="letter-button">S</button>
+        <div class="flex-break"></div>
+        <button class="letter-button">T</button>
+        <button class="letter-button">U</button>
+        <button class="letter-button">V</button>
+        <button class="letter-button">W</button>
+        <button class="letter-button">X</button>
+        <button class="letter-button">Y</button>
+        <button class="letter-button">Z</button>
+      </div>
+    </main>
+    <footer>
+      <p>Criado por <a href="https://github.com/lucazcruz">Lucazcruz</a></p>
+    </footer>
+  </div>
+
+  <script src="./dist/script.js"></script>
+</body>
+</html>
